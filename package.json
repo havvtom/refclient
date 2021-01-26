@@ -1,0 +1,22 @@
+{
+  "name": "refclient",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/auth-next": "5.0.0-1611071776.3646657",
+    "@nuxtjs/axios": "^5.12.5",
+    "cookie-universal-nuxt": "^2.1.4",
+    "core-js": "^3.8.2",
+    "moment": "^2.29.1",
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.4.2"
+  }
+}
