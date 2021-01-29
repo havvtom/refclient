@@ -12,7 +12,7 @@
 				<input 
 					type="email" 
 					name="" 
-					class="bg-gray-200 border-2 border-gray-200 rounded-lg w-full h-10 px-4 py-2" 
+					class="bg-gray-200 border border-blue-400 rounded-lg w-full h-10 px-4 py-2" 
 					:class="{ 'border-red-500':validation.email }"
 					placeholder="you@email.com" 
 					v-model="form.email"
@@ -31,7 +31,7 @@
 				<input 
 					type="password" 
 					name="" 
-					class="bg-gray-200 border-2 border-gray-200 rounded-lg w-full h-10 px-4 py-2" 
+					class="bg-gray-200 border border-blue-400 rounded-lg w-full h-10 px-4 py-2" 
 					:class="{ 'border-red-500':validation.password }"
 					v-model="form.password"
 				>
@@ -63,7 +63,7 @@
 					await this.$auth.loginWith( 'local', {
 					data: this.form
 					} )
-					console.log(this.$auth.user)
+					
 				} catch (e) {
 					if(e.response.status ===422) {
 						this.validation = e.response.data.errors
