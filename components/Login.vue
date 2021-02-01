@@ -63,6 +63,7 @@
 					await this.$auth.loginWith( 'local', {
 					data: this.form
 					} )
+					this.$nuxt.refresh()
 					
 				} catch (e) {
 					if(e.response.status ===422) {
